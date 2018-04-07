@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##Overtime Aoo
 
-Things you may want to cover:
+Key Requirements: comany need documentation of overtime from employees each week.
 
-* Ruby version
+Models
+- Post -> date:date rationale:text
+- User -> Devise
+- AdminUser -> STI
 
-* System dependencies
+Features:
+- Approval Workflow
+- SMS Sending -> Link to approval or overtime input
+- Admistrate admin dashboard
+- Email summary to managers for approval
+- Need to be documented if employee did not not overtime
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+UI:
+Bootstab -> Formating
