@@ -2,7 +2,13 @@
   "name": "overtimeapp",
   "private": true,
   "dependencies": {
+    "@rails/webpacker": "3.4",
+    "gritter": "^1.7.4",
+    "growl": "^1.10.5",
     "jquery": "^3.3.1",
     "sweetalert": "^2.1.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "2.11.2"
   }
 }
