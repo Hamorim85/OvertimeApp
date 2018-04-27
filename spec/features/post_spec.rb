@@ -86,6 +86,17 @@ describe 'navigate' do
       click_on "Save"
       expect(page).to have_content("Edited content")
     end
+
+    it 'can not be edited by a non authorized user' do
+      logout(:user)
+      non_authorized_user = FactoryBot.create(:non_authorized_user)
+      login_as(non_authorized_user, :scope => :user)
+
+       visit edit_post_path(@post)
+
+      expect(current_page).to eq(root_path)
+    end
+
   end
 end
 
