@@ -19,7 +19,7 @@
         </div>
     </div>
     <%= javascript_pack_tag 'application' %>
-    <%= js add_gritter(flash[:notice], title: "DailySmarty Notification", sticky: false) %>
+    <%= render 'shared/alerts' %>
   </body>
 </html>
 
