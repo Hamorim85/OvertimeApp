@@ -20,6 +20,7 @@ gem 'gritter', '1.2.0'
 gem 'webpacker', '~> 3.4'
 gem 'administrate', '~> 0.10.0'
 gem 'bourbon', '~> 5.0'
+gem 'pundit'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
