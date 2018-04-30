@@ -11,4 +11,6 @@ FactoryBot.define do
     status
     user
   end
+
+
 end
