@@ -45,8 +45,7 @@ describe 'navigate' do
   describe 'delete' do
     it 'can be deleted' do
       @post = FactoryBot.create(:post)
-      @post.update(user)
-      @post.user_id = @user.id
+      @post.update(user_id: @user.id)
       visit posts_path
 
       click_link("delete_post_#{@post.id}_from_index")
