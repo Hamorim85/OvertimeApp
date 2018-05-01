@@ -4,7 +4,7 @@ describe 'navigate' do
   let(:user) {FactoryBot.create(:user)}
 
   let(:post) do
-    Post.create(date: Date.today, rationale: "Rationale", user_id: user.id)
+    Post.create(date: Date.today, rationale: "Rationale", user_id: user.id, overtime_request: 2.5)
   end
 
   before do
@@ -30,7 +30,7 @@ describe 'navigate' do
 
     it 'has scope so that only post creators can see their post'
       other_user = User.create(first_name: 'non', last_name: 'Authorized', email: "nonauth@email.com", password: "asdfasdf", password_confirmation: "asdfasdf")
-      post_from_other_user = Post.create(date: Date.Today, rationale:"this post shouldn't be seem", user_id:other_user.id )
+      post_from_other_user = Post.create(date: Date.Today, rationale:"this post shouldn't be seem", user_id: other_user.id, overtime_request: 2.5 )
 
       expect(page).to have_content(/"this post shouldn't be seem"/)
 
@@ -52,7 +52,7 @@ describe 'navigate' do
       delete_user = FactoryBot.create(:user)
       login_as(delete_user, :scope => :user)
 
-      post_to_delete = Post.create(date: Date.today, rationale: 'asdf', user_id: delete_user.id)
+      post_to_delete = Post.create(date: Date.today, rationale: 'asdf', user_id: delete_user.id, overtime_request: 2.5)
 
       visit posts_path
 
