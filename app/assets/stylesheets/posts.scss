@@ -2,3 +2,13 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.index_icons {
+  color: gray;
+  font-size: 1.5em;
+}
+
+.index_icons:hover {
+  color: hsla(0, 0%, 50%, .5);
+  font-size: 1.5em;
+}

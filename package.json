@@ -6,6 +6,7 @@
     "gritter": "^1.7.4",
     "growl": "^1.10.5",
     "jquery": "^3.3.1",
+    "octicons": "^7.2.0",
     "sweetalert": "^2.1.0"
   },
   "devDependencies": {
