@@ -29,7 +29,7 @@ describe 'navigate' do
     end
 
     it 'has scope so that only post creators can see their post'
-      other_user = User.create(first_name: 'non', last_name: 'Authorized', email: "nonauth@email.com", password: "asdfasdf", password_confirmation: "asdfasdf")
+      other_user = User.create(first_name: 'non', last_name: 'Authorized', email: "nonauth@email.com", password: "asdfasdf", password_confirmation: "asdfasdf", phone:"21998692728")
       post_from_other_user = Post.create(date: Date.Today, rationale:"this post shouldn't be seem", user_id: other_user.id, overtime_request: 2.5 )
 
       expect(page).to have_content(/"this post shouldn't be seem"/)
