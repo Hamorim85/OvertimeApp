@@ -8,6 +8,11 @@ class User < ApplicationRecord
   validates :last_name, presence: true
   validates :phone, presence: true
 
+  PHONE_REGEX = /\A[0-9]*\Z/
+
+  validates_format_of :phone, with: PHONE_REGEX
+
+  validates :phone, length: { is: 10 }
 
 
   def full_name
