@@ -5,6 +5,7 @@ RSpec.describe Post, type: :model do
       before do
       @post = FactoryBot.create(:post)
     end
+
     it "can be created" do
       expect(@post).to be_valid
     end
@@ -18,7 +19,6 @@ RSpec.describe Post, type: :model do
     it "has an overtime request greater than 0.0" do
       @post.overtime_request = 0.0
       expect(@post).to_not be_valid
-
     end
 
   end

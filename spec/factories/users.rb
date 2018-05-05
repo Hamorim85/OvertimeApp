@@ -4,7 +4,7 @@ FactoryBot.define do
   end
 
   factory :user do
-    fist_name 'Jon'
+    first_name 'Jon'
     last_name 'Snow'
     email {generate :email }
     password 'asdfasdf'
@@ -13,7 +13,7 @@ FactoryBot.define do
   end
 
   factory :admin_user,  class: "AdminUser" do
-    fist_name 'Admin'
+    first_name 'Admin'
     last_name 'User'
     email {generate :email }
     password 'asdfasdf'
@@ -22,7 +22,7 @@ FactoryBot.define do
   end
 
   factory :non_authorized_user,  class: "User" do
-    fist_name 'non'
+    first_name 'non'
     last_name 'User'
     email {generate :email }
     password 'asdfasdf'

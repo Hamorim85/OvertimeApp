@@ -75,7 +75,7 @@ describe 'navigate' do
       fill_in 'post[overtime_request]', with: 4.5
       click_on "Save"
 
-      expect{ click_on "Save"}.to Change{Post, :count}.by{1}
+      expect{ click_on "Save"}.to change{post, :count.by{1}}
     end
 
     it 'Will a have a user associated it' do
