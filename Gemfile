@@ -47,3 +47,4 @@ gem 'devise', '~> 4.4', '>= 4.4.3'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'twilio-ruby', '~> 4.11', '>= 4.11.1'
 gem 'dotenv-rails', :groups => [:development, :test]
+gem 'kaminari', '~> 1.1.1'
