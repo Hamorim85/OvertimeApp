@@ -2,7 +2,7 @@
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  background-color: #e3e3e3;
+  background-color: rgba(93, 253, 203, .33);
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
@@ -12,8 +12,12 @@
 .homepage-block {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  background-color: #9cf;
-  margin: 15px;
+  background-color: hsl(206, 98%, 20%);
+  margin: 12px 42px;
   padding: 15px;
-  color: #333348;
+  color: #F4FAFF;
+}
+
+.pending-details {
+  font-weight: 900;
 }
