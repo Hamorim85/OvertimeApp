@@ -21,7 +21,13 @@ describe 'Auditlog feature' do
     end
 
     it 'cannot be access by non admit users' do
+      logout(:user)
+      user = FactoryBot.create(:user)
+      login_as(user, :scope => :user)
 
+      visit_audit_logs_path
+
+      expect(current_path).to eq(root_path)
     end
 
 end
