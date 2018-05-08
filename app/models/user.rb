@@ -13,7 +13,9 @@ class User < ApplicationRecord
 
   validates_format_of :phone, with: PHONE_REGEX
 
-  # validates :phone, length: { is: 14 }
+  validates :phone, length: { is: 14 }
+
+  scope :employee, -> { where(type: nil) }
 
 
   def full_name
